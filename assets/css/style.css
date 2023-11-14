@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+table{
+    margin: 100px auto;
+    
+    width: fit-content;
+    height: fit-content;
+    border-collapse: collapse;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(121, 121, 121);
+
+}
+table tbody tr td:nth-of-type(2){
+    text-align: left;
+    width: 350px;
+    padding-left: 10px;
+}
+table tbody tr td:nth-of-type(1){
+    text-align: center;
+    width: 30px;
+}
+table thead tr th:not(:nth-of-type(1), :nth-of-type(2)){
+    width: 80px;
+}
+table td{
+    text-align: center;
+    border-collapse: collapse;
+    border-width: 1px;
+    border-color: rgb(121, 121, 121);
+    border-style: solid;
+    padding: 5px 0px;
+
+}
+table th{
+    border-collapse: collapse;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(121, 121, 121);
+    padding: 5px 0px;
+
+}
+.modal {
+    display: none;
+    position: absolute;
+    top: 130px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 500px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    background-color: bisque;
+}
+.modal-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal span{
+    font-size: 50px;
+    color: black;
+    
+}
+.modal h2{
+    color: rgb(31, 31, 114);
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+.modal button{
+    margin-bottom: 10px;
+    border-style: none;
+    width: 40px;
+    height: 20px;
+}
+table button{
+    padding: 5px 8px;
+    border-style: none;
+    cursor: pointer;
+}
