@@ -42,26 +42,42 @@ table th{
     padding: 5px 0px;
 
 }
-.modal {
-    display: none;
+.modalOverlay {
+     display: none;
+     justify-content: center;
+     align-items: center;
     position: absolute;
-    top: 130px;
+    width: 100%;
+    height: 100vh;
+    top: 0;
     left: 0;
-    right: 0;
-    margin: auto;
-    width: 500px;
+    background-color: rgba(0, 0,0, 0.45);
+}
+.modal {
+    /* margin: auto; */
+    width: 400px;
     padding: 20px 30px;
     box-sizing: border-box;
-    background-color: bisque;
+    background-color: white;
 }
 .modal-heading{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid darkgrey;
+}
+.modal-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
 }
 .modal span{
-    font-size: 50px;
-    color: black;
+    font-size: 30px;
+    color: darkgray;
+    font-weight: bold;
     
 }
 .modal h2{
@@ -73,8 +89,9 @@ table th{
 .modal button{
     margin-bottom: 10px;
     border-style: none;
-    width: 40px;
-    height: 20px;
+    padding: 5px 13px;
+
+
 }
 table button{
     padding: 5px 8px;

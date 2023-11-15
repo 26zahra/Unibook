@@ -1,9 +1,9 @@
 var btnde = document.querySelectorAll("tbody button");
-var modal = document.querySelector(".modal");
+var modal = document.querySelector(".modalOverlay");
 var x;
 btnde.forEach(item => {
     item.addEventListener("click", function () {
-        modal.style.display = "block";
+        modal.style.display = "flex";
         x = item;
 
     })
